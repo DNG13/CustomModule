@@ -1,0 +1,15 @@
+<?php
+
+use Magento\Framework\View\Element\Template;
+use Rd\CustomModule\ViewModel\User;
+
+/** @var User $viewModel */
+/** @var Template $block */
+
+$viewModel = $block->getData('viewModel');
+
+?>
+
+<h2> From magento 2 custom Example module.</h2>
+<p><?= $block->getData('custom_parameter'); ?></p>
+<h2>Hello, <?= $viewModel->getFirstName(); ?></h2>
